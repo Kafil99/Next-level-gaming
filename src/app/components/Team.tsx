@@ -75,34 +75,20 @@ export default function Team() {
   return (
     <main className="min-h-screen w-full bg-gradient-to-b from-blue-950 to-blue-700 p-4 md:p-8">
       <div className="max-w-6xl mx-auto space-y-12">
-        {/* Team Section */}
-        <section>
-          <h2 className="text-white text-2xl font-bold mb-8">Our Team</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {teamMembers.map((member, index) => (
-              <TeamMemberCard
-                key={index}
-                name={member.name}
-                role={member.role}
-                imageUrl={member.imageUrl}
-              />
-            ))}
-          </div>
-        </section>
-
-        {/* Additional Section */}
-        <section>
-          <h2 className="text-white text-2xl font-bold mb-4">Lorem Ipsum</h2>
-          <p className="text-gray-300 max-w-2xl">
-            Lorem ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </section>
-
-        {/* Newsletter Section */}
-        <section className="pb-8">
-          <NewsletterSubscribe />
-        </section>
+        <h2 className="text-white text-4xl font-semibold text-center mb-12">
+          Meet the team
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {teamMembers.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+            />
+          ))}
+        </div>
+        <NewsletterSubscribe />
       </div>
     </main>
   );

@@ -30,19 +30,19 @@ export default function WorkWithUs() {
           <Card
             badge="Lorem ipsum"
             title="Lorem Ipsum"
-            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s."
             badgeColor="bg-pink-100 text-pink-800"
           />
           <Card
             badge="Lorem ipsum"
             title="Lorem Ipsum"
-            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s."
             badgeColor="bg-orange-100 text-orange-800"
           />
           <Card
             badge="Lorem ipsum"
             title="Lorem Ipsum"
-            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s."
             badgeColor="bg-green-100 text-green-800"
           />
         </div>

@@ -7,99 +7,8 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
+import WorkWithUs from "../components/Work";
 
-// Props Interface for the Card Component
-interface CardProps {
-  badge: string;
-  title: string;
-  description: string;
-  badgeColor: string;
-}
-
-// Card Component
-function Card({ badge, title, description, badgeColor }: CardProps) {
-  return (
-    <div className="bg-white rounded-3xl p-8 flex flex-col gap-4">
-      <span className={`text-sm px-4 py-1 rounded-full w-fit ${badgeColor}`}>
-        {badge}
-      </span>
-      <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="text-gray-600 leading-relaxed">{description}</p>
-    </div>
-  );
-}
-
-// WorkWithUs Component
-function WorkWithUs() {
-  return (
-    <div className="w-full min-h-screen bg-[#0a0826] p-6 md:p-12 flex items-center justify-center">
-      <section className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
-          Why work with us
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card
-            badge="Lorem ipsum"
-            title="Lorem Ipsum"
-            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-            badgeColor="bg-pink-100 text-pink-800"
-          />
-          <Card
-            badge="Lorem ipsum"
-            title="Lorem Ipsum"
-            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-            badgeColor="bg-orange-100 text-orange-800"
-          />
-          <Card
-            badge="Lorem ipsum"
-            title="Lorem Ipsum"
-            description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-            badgeColor="bg-green-100 text-green-800"
-          />
-        </div>
-      </section>
-    </div>
-  );
-}
-
-// Game Component
-function Game() {
-  return (
-    <div className="w-full min-h-screen bg-white">
-      <section className="container mx-auto px-4 py-12 md:py-16">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
-          <div className="w-full md:w-1/2">
-            <Image
-              src="/Images/titan.png"
-              alt="Dark fantasy battle scene"
-              width={600}
-              height={400}
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="w-full md:w-1/2 space-y-4">
-            <div className="text-sm uppercase tracking-wider text-gray-600">
-              Lorem ipsum
-            </div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Lorem ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-
-// About Page Component
 export default function About() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
@@ -133,8 +42,8 @@ export default function About() {
             </h1>
             <p className="text-gray-300 text-lg">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500s.
             </p>
             <button className="bg-gradient-to-r from-red-600 to-orange-400 px-8 py-3 rounded-full text-white font-semibold flex items-center space-x-2 hover:opacity-90 transition-opacity">
               Get in touch
@@ -176,7 +85,6 @@ export default function About() {
         </div>
       </main>
       <WorkWithUs />
-      <Game />
       <Team />
       <Footer />
     </>

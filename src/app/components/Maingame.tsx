@@ -14,7 +14,7 @@ export default function Maingame() {
             <h2 className="text-xl md:text-2xl font-bold mb-4">Lorem Ipsum</h2>
             <p className="text-sm md:text-base text-gray-300 mb-8">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
               ever since the 1500s.
             </p>
           </div>
