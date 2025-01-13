@@ -7,7 +7,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function News() {
-  // Array to store image paths
   const images = [
     "/Images/thumbnail1.png",
     "/Images/thumbnail2.png",
